@@ -84,6 +84,13 @@ export default function PrivacyMemoMatch() {
                   <p>Website: www.alleapp.space</p>
                 </div>
               </section>
+
+              <section>
+                <h2 className="text-3xl font-bold text-[#00E5FF] mb-4">9. ALTERAÇÕES NESTA POLÍTICA</h2>
+                <p className="text-gray-300 leading-relaxed">
+                  Podemos atualizar esta política periodicamente para refletir mudanças nas leis ou nos nossos serviços. Recomendamos que você visite esta página de tempos em tempos.
+                </p>
+              </section>
             </div>
 
             <div className="mt-16 space-y-4">

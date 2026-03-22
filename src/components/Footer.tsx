@@ -43,6 +43,7 @@ export default function Footer() {
             <h4 className="text-xl font-display font-bold mb-8 text-white tracking-tight">Legal & Suporte</h4>
             <ul className="space-y-4 text-slate-500">
               <li><a href="/politica-de-privacidade" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Privacidade</a></li>
+              <li><a href="/privacidade-memomatch" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Privacidade MemoMatch</a></li>
               <li><a href="/termos" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Termos de Uso</a></li>
               <li><a href="/#faq" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> FAQ</a></li>
               <li><a href="/#contact" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Contato</a></li>
