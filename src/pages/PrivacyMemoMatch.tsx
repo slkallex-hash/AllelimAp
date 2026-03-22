@@ -14,7 +14,7 @@ export default function PrivacyMemoMatch() {
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#00E5FF] drop-shadow-[0_0_15px_rgba(0,229,255,0.4)] uppercase tracking-wide">
               POLÍTICA DE PRIVACIDADE
             </h1>
-            <p className="text-gray-400 italic mb-12 text-lg">Última atualização: 17/03/2026</p>
+            <p className="text-gray-400 italic mb-12 text-lg">Última atualização: 22/03/2026</p>
 
             <div className="space-y-10 text-lg">
               <section>
