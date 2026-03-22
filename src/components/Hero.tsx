@@ -48,23 +48,6 @@ export default function Hero() {
                 Ver Demo
               </button>
             </div>
-
-            <div className="mt-16 flex items-center gap-8 border-t border-white/5 pt-10">
-              <div>
-                <div className="text-2xl font-bold text-white">10k+</div>
-                <div className="text-xs text-slate-500 uppercase tracking-widest">Usuários</div>
-              </div>
-              <div className="w-px h-8 bg-white/10" />
-              <div>
-                <div className="text-2xl font-bold text-white">4.9/5</div>
-                <div className="text-xs text-slate-500 uppercase tracking-widest">Avaliação</div>
-              </div>
-              <div className="w-px h-8 bg-white/10" />
-              <div>
-                <div className="text-2xl font-bold text-white">99.9%</div>
-                <div className="text-xs text-slate-500 uppercase tracking-widest">Uptime</div>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div
@@ -77,16 +60,37 @@ export default function Hero() {
             <div className="relative glass-card rounded-[3rem] p-4 aspect-[9/16] w-[320px] mx-auto border-white/20">
               <div className="bg-deep-black rounded-[2.5rem] h-full w-full overflow-hidden relative">
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-brand-primary/20 to-transparent" />
-                <div className="p-8 relative z-10">
-                  <div className="w-12 h-12 bg-white/10 rounded-xl mb-6" />
-                  <div className="h-4 w-3/4 bg-white/10 rounded-full mb-4" />
-                  <div className="h-4 w-1/2 bg-white/10 rounded-full mb-12" />
+                <div className="p-8 relative z-10 flex flex-col h-full">
+                  {/* Futuristic App UI Mockup */}
+                  <div className="flex items-center gap-4 mb-6">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=150&auto=format&fit=crop" alt="Avatar" className="w-12 h-12 rounded-xl object-cover border border-white/20" />
+                    <div>
+                      <div className="h-3 w-20 bg-white/20 rounded-full mb-2" />
+                      <div className="h-2 w-12 bg-white/10 rounded-full" />
+                    </div>
+                  </div>
                   
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="h-24 bg-white/5 rounded-2xl border border-white/10" />
-                    <div className="h-24 bg-white/5 rounded-2xl border border-white/10" />
-                    <div className="h-24 bg-white/5 rounded-2xl border border-white/10" />
-                    <div className="h-24 bg-white/5 rounded-2xl border border-white/10" />
+                  <div className="relative w-full h-32 rounded-2xl overflow-hidden mb-6 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" alt="Dashboard" className="w-full h-full object-cover opacity-80" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4">
+                      <div className="h-3 w-24 bg-white/30 rounded-full mb-2" />
+                      <div className="h-2 w-16 bg-white/20 rounded-full" />
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-4 flex-1">
+                    <div className="relative rounded-2xl overflow-hidden border border-white/10 group">
+                      <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?q=80&w=300&auto=format&fit=crop" alt="Feature 1" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                    <div className="relative rounded-2xl overflow-hidden border border-white/10 group">
+                      <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=300&auto=format&fit=crop" alt="Feature 2" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                    <div className="relative rounded-2xl overflow-hidden border border-white/10 group">
+                      <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=300&auto=format&fit=crop" alt="Feature 3" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                    <div className="relative rounded-2xl overflow-hidden border border-white/10 group">
+                      <img src="https://images.unsplash.com/photo-1634152962476-4b8a00e1915c?q=80&w=300&auto=format&fit=crop" alt="Feature 4" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                    </div>
                   </div>
                 </div>
               </div>

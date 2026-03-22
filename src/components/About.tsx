@@ -86,7 +86,7 @@ export default function About() {
                       {React.cloneElement(benefit.icon as React.ReactElement, { size: 32, className: "text-neon-blue" })}
                     </div>
                     <div>
-                      <h4 className="text-2xl font-display font-bold text-white mb-3 tracking-tight">{benefit.title}</h4>
+                      <h3 className="text-2xl font-display font-bold text-white mb-3 tracking-tight">{benefit.title}</h3>
                       <p className="text-slate-400 leading-relaxed font-light">{benefit.description}</p>
                     </div>
                   </div>

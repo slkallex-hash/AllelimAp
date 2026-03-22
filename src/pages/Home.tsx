@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Features from '../components/Features';
-import Stats from '../components/Stats';
 import CTA from '../components/CTA';
 import Gallery from '../components/Gallery';
 import FAQ from '../components/FAQ';
@@ -15,7 +14,6 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <Hero />
-      <Stats />
       <About />
       <Features />
       <Gallery />
