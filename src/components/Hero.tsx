@@ -26,7 +26,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-primary"></span>
               </span>
-              Próxima Geração de Produtividade
+              Atualizado ao vivo no AI Studio! 🚀
             </div>
             
             <h1 className="text-6xl md:text-8xl font-display font-extrabold text-white leading-[0.9] mb-8 tracking-tighter">
@@ -35,7 +35,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-slate-400 mb-12 max-w-xl leading-relaxed font-light">
-              Domine sua rotina com o <span className="text-white font-medium">AlleApp</span>. 
+              Domine sua rotina com o <span className="text-white font-medium">AlleApp 2.0</span>. 
               Uma experiência fluida, segura e inteligente, desenhada para quem exige o máximo de cada segundo.
             </p>
 
