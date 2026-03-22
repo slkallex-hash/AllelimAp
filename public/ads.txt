@@ -1,0 +1,4 @@
+# A-ADS ads.txt
+a-ads.com, 2431199, DIRECT
+# HilltopAds
+hilltopads.com, 359392222406ac3e9bc7333e71c301884d9df532, DIRECT
