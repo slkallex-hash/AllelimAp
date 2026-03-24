@@ -5,6 +5,7 @@ import Privacy from './pages/Privacy';
 import PrivacyMemoMatch from './pages/PrivacyMemoMatch';
 import Terms from './pages/Terms';
 import Pricing from './pages/Pricing';
+import FixedAdBanner from './components/FixedAdBanner';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -36,7 +37,8 @@ export default function App() {
           <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_70%,rgba(6,182,212,0.05),transparent_50%)]" />
         </div>
         
-        <div className="relative z-10">
+        <div className="relative z-10 pt-[60px] pb-[60px]">
+          <FixedAdBanner position="top" />
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -48,6 +50,7 @@ export default function App() {
             <Route path="/termos" element={<Terms />} />
             <Route path="/terms" element={<Terms />} />
           </Routes>
+          <FixedAdBanner position="bottom" />
         </div>
       </div>
     </Router>
