@@ -8,6 +8,7 @@ import Gallery from '../components/Gallery';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import AdWall from '../components/AdWall';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Features />
       <Gallery />
       <CTA />
+      <AdWall />
       <FAQ />
       <Contact />
       <Footer />
