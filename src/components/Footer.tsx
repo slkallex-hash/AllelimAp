@@ -62,19 +62,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* A-ADS Ad Unit for Verification and Display */}
-        <div className="mt-16 pt-12 border-t border-white/5">
-          <div className="container mx-auto px-4">
-            <div style={{ width: '100%', margin: 'auto', position: 'relative', zIndex: 99998 }}>
-              <iframe 
-                data-aa="2431199" 
-                src="//ad.a-ads.com/2431199?size=Adaptive"
-                style={{ border: 0, padding: 0, width: '100%', height: '80px', overflow: 'hidden', display: 'block', margin: 'auto', backgroundColor: 'transparent' }}
-              ></iframe>
-            </div>
-          </div>
-        </div>
-
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-600 text-sm">
           <p>© {currentYear} AlleApp. Todos os direitos reservados.</p>
           <div className="flex items-center gap-8">
