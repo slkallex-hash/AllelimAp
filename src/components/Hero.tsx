@@ -29,8 +29,15 @@ export default function Hero() {
               Atualizado ao vivo no AI Studio! 🚀
             </div>
             
-            <div className="w-full h-64 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-12">
-              <span className="text-white/40 font-medium tracking-widest uppercase text-sm">Espaço Publicitário</span>
+            <div className="grid grid-cols-2 gap-4 w-full mb-12">
+              {[1, 2, 3, 4].map((i) => (
+                <div key={i} className="w-full h-40 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center relative overflow-hidden group">
+                  <div className="absolute top-2 right-2 w-4 h-4 rounded-full border border-white/20 text-white/40 flex items-center justify-center text-[10px] bg-black/50">i</div>
+                  <span className="text-white/40 font-medium tracking-widest uppercase text-xs text-center px-2">
+                    Espaço Publicitário {i}
+                  </span>
+                </div>
+              ))}
             </div>
           </motion.div>
 
