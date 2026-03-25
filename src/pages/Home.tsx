@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Features from '../components/Features';
 import CTA from '../components/CTA';
 import Gallery from '../components/Gallery';
 import FAQ from '../components/FAQ';
@@ -20,7 +19,6 @@ export default function Home() {
       <AdSection count={6} />
       
       <About />
-      <Features />
       
       {/* Anúncios no Meio (12 blocos) */}
       <AdSection 
