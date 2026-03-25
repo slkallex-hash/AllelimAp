@@ -31,11 +31,23 @@ export default function Hero() {
             
             <div className="grid grid-cols-2 gap-4 w-full mb-12">
               {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-full h-40 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center relative overflow-hidden group">
-                  <div className="absolute top-2 right-2 w-4 h-4 rounded-full border border-white/20 text-white/40 flex items-center justify-center text-[10px] bg-black/50">i</div>
-                  <span className="text-white/40 font-medium tracking-widest uppercase text-xs text-center px-2">
-                    Espaço Publicitário {i}
-                  </span>
+                <div key={i} className="w-full h-[250px] bg-white/5 border border-white/10 rounded-xl flex items-center justify-center relative overflow-hidden">
+                  {/* 
+                    SUBSTITUA O 'adzone' ABAIXO PELO SEU ID REAL DA JUICYADS.
+                    Exemplo: src="https://adserver.juicyads.com/adshow.php?adzone=123456"
+                  */}
+                  <iframe 
+                    title={`JuicyAds Slot ${i}`}
+                    width="300" 
+                    height="250" 
+                    frameBorder="0" 
+                    marginHeight={0} 
+                    marginWidth={0} 
+                    scrolling="no" 
+                    allowTransparency={true} 
+                    src={`https://adserver.juicyads.com/adshow.php?adzone=SEU_ID_DA_ZONA_AQUI`}
+                    className="max-w-full"
+                  ></iframe>
                 </div>
               ))}
             </div>
