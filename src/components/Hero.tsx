@@ -29,24 +29,8 @@ export default function Hero() {
               Atualizado ao vivo no AI Studio! 🚀
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-display font-extrabold text-white leading-[0.9] mb-8 tracking-tighter">
-              A nova era da sua <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/30">vida digital</span>
-            </h1>
-            
-            <p className="text-lg md:text-xl text-slate-400 mb-12 max-w-xl leading-relaxed font-light">
-              Domine sua rotina com o <span className="text-white font-medium">AlleApp 2.0</span>. 
-              Uma experiência fluida, segura e inteligente, desenhada para quem exige o máximo de cada segundo.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-5">
-              <button className="group relative px-8 py-4 bg-white text-black rounded-2xl font-bold text-lg transition-all hover:scale-[1.02] active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-                Baixar AlleApp
-              </button>
-              <button className="group px-8 py-4 bg-white/5 border border-white/10 text-white rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2">
-                <Smartphone size={20} className="text-brand-primary" />
-                Ver Demo
-              </button>
+            <div className="w-full h-64 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-12">
+              <span className="text-white/40 font-medium tracking-widest uppercase text-sm">Espaço Publicitário</span>
             </div>
           </motion.div>
 
