@@ -16,13 +16,19 @@ export default function Home() {
       <Navbar />
       <Hero />
       
+      {/* Native Ad Section */}
+      <NativeAdSection count={2} />
+      
       {/* Anúncios no Topo (6 blocos) */}
       <AdSection count={6} />
       
       {/* Native Ad Section */}
-      <NativeAdSection />
+      <NativeAdSection count={2} />
       
       <About />
+      
+      {/* Native Ad Section */}
+      <NativeAdSection count={2} />
       
       {/* Anúncios no Meio (12 blocos) */}
       <AdSection 
@@ -33,19 +39,31 @@ export default function Home() {
       />
       
       {/* Native Ad Section */}
-      <NativeAdSection />
+      <NativeAdSection count={4} />
       
       <Gallery />
+      
+      {/* Native Ad Section */}
+      <NativeAdSection count={2} />
+      
       <CTA />
+      
+      {/* Native Ad Section */}
+      <NativeAdSection count={2} />
+      
       <FAQ />
       
       {/* Anúncios no Final (12 blocos) */}
       <AdSection count={12} />
       
       {/* Native Ad Section */}
-      <NativeAdSection />
+      <NativeAdSection count={4} />
       
       <Contact />
+      
+      {/* Native Ad Section */}
+      <NativeAdSection count={2} />
+      
       <Footer />
     </div>
   );
