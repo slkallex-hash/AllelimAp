@@ -22,6 +22,7 @@ export default function Navbar() {
     { name: 'Home', href: '/#home' },
     { name: 'Sobre', href: '/#about' },
     { name: 'Planos', href: '/planos' },
+    { name: 'Notícias', href: '/noticias' },
     { name: 'Galeria', href: '/#gallery' },
     { name: 'FAQ', href: '/#faq' },
     { name: 'Privacidade', href: '/politica-de-privacidade' },

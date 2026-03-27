@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import CTA from '../components/CTA';
 import Gallery from '../components/Gallery';
+import NewsSection from '../components/NewsSection';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Gallery />
+      <NewsSection />
       <CTA />
       <FAQ />
       <Contact />

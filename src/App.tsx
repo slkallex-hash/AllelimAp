@@ -5,6 +5,8 @@ import Privacy from './pages/Privacy';
 import PrivacyMemoMatch from './pages/PrivacyMemoMatch';
 import Terms from './pages/Terms';
 import Pricing from './pages/Pricing';
+import NewsIndex from './pages/NewsIndex';
+import NewsArticle from './pages/NewsArticle';
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -41,6 +43,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/planos" element={<Pricing />} />
+            <Route path="/noticias" element={<NewsIndex />} />
+            <Route path="/noticias/:slug" element={<NewsArticle />} />
             <Route path="/politica-de-privacidade" element={<Privacy />} />
             <Route path="/privacidade" element={<Privacy />} />
             <Route path="/privacy" element={<Privacy />} />
