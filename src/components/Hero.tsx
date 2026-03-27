@@ -32,7 +32,7 @@ export default function Hero() {
             <div className="grid grid-cols-2 gap-4 w-full mb-12">
               {[1, 2, 3, 4].map((i) => (
                 <div key={i} className="w-full h-[250px] bg-white/5 border border-white/10 rounded-xl flex items-center justify-center relative overflow-hidden">
-                  <span className="text-white/20 text-sm font-medium uppercase tracking-wider">Espaço Publicitário</span>
+                  <div data-banner-id="2018598"></div>
                 </div>
               ))}
             </div>
