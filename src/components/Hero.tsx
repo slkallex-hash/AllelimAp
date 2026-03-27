@@ -32,18 +32,7 @@ export default function Hero() {
             <div className="grid grid-cols-2 gap-4 w-full mb-12">
               {[1, 2, 3, 4].map((i) => (
                 <div key={i} className="w-full h-[250px] bg-white/5 border border-white/10 rounded-xl flex items-center justify-center relative overflow-hidden">
-                  <iframe 
-                    title={`JuicyAds Slot ${i}`}
-                    width="300" 
-                    height="250" 
-                    frameBorder="0" 
-                    marginHeight={0} 
-                    marginWidth={0} 
-                    scrolling="no" 
-                    allowTransparency={true} 
-                    src="/ad.html"
-                    className="max-w-full"
-                  ></iframe>
+                  <span className="text-white/20 text-sm font-medium uppercase tracking-wider">Espaço Publicitário</span>
                 </div>
               ))}
             </div>
