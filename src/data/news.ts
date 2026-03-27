@@ -9,9 +9,10 @@ export interface NewsArticle {
   date: string;
   author: string;
   readTime: string;
+  trending?: boolean;
 }
 
-export const categories = ['Todas', 'Tecnologia', 'Atualidades', 'Inovação', 'Segurança'];
+export const categories = ['Todas', 'Inteligência Artificial', 'Cibersegurança', 'Mercado Tech', 'Gadgets', 'Inovação', 'Sustentabilidade'];
 
 export const newsData: NewsArticle[] = [
   {
@@ -28,11 +29,12 @@ export const newsData: NewsArticle[] = [
       <h2>O Futuro da Produtividade</h2>
       <p>Com a evolução contínua do aprendizado de máquina, podemos esperar assistentes virtuais ainda mais proativos, capazes de antecipar nossas necessidades antes mesmo de as percebermos. O AlleApp, por exemplo, já integra algumas dessas tecnologias para oferecer uma experiência de usuário sem precedentes.</p>
     `,
-    category: 'Tecnologia',
+    category: 'Inteligência Artificial',
     imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1600&auto=format&fit=crop',
     date: '27 Mar 2026',
     author: 'Equipe AlleApp',
-    readTime: '4 min'
+    readTime: '4 min',
+    trending: true
   },
   {
     id: '2',
@@ -48,11 +50,12 @@ export const newsData: NewsArticle[] = [
       <h2>Privacidade por Design</h2>
       <p>No AlleApp, a segurança não é um recurso opcional, mas a base da nossa arquitetura. Utilizamos criptografia de ponta a ponta e protocolos de conhecimento zero para garantir que apenas você tenha acesso às suas informações mais sensíveis.</p>
     `,
-    category: 'Segurança',
+    category: 'Cibersegurança',
     imageUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop',
     date: '25 Mar 2026',
     author: 'Carlos Mendes',
-    readTime: '5 min'
+    readTime: '5 min',
+    trending: true
   },
   {
     id: '3',
@@ -68,7 +71,7 @@ export const newsData: NewsArticle[] = [
       <h2>Novas Habilidades Exigidas</h2>
       <p>A adaptabilidade e a fluência digital são agora mais valorizadas do que o conhecimento técnico específico, que pode se tornar obsoleto rapidamente. Ferramentas que centralizam a comunicação e a gestão de projetos, como o AlleApp, são essenciais para manter equipes distribuídas alinhadas e produtivas.</p>
     `,
-    category: 'Atualidades',
+    category: 'Mercado Tech',
     imageUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop',
     date: '22 Mar 2026',
     author: 'Ana Silva',
@@ -82,17 +85,16 @@ export const newsData: NewsArticle[] = [
     content: `
       <p>A transição das telas planas para interfaces tridimensionais está acontecendo mais rápido do que o previsto. A computação espacial permite que elementos digitais coexistam com o mundo físico de forma natural.</p>
       <h2>Interfaces Sem Limites</h2>
-      <p>Aplicativos não estão mais confinados a retângulos de vidro. Eles podem flutuar na sua sala de estar, adaptar-se à iluminação do ambiente e responder a gestos sutis das mãos e movimentos dos olhos.</p>
+      <p>Aplicativos não estão confinados a retângulos de vidro. Eles podem flutuar na sua sala de estar, adaptar-se à iluminação do ambiente e responder a gestos sutis das mãos e movimentos dos olhos.</p>
       <h2>Colaboração Imersiva</h2>
       <p>Reuniões virtuais agora parecem encontros presenciais, com avatares fotorrealistas e áudio espacial que recriam a sensação de estar na mesma sala que seus colegas de trabalho.</p>
-      <h2>O Desafio do Design</h2>
-      <p>Desenvolvedores e designers enfrentam o desafio de criar experiências que sejam intuitivas e não intrusivas. A equipe do AlleApp já está explorando protótipos para levar nossa interface fluida para o ambiente de realidade mista, garantindo que a produtividade não tenha barreiras físicas.</p>
     `,
     category: 'Inovação',
     imageUrl: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1600&auto=format&fit=crop',
     date: '18 Mar 2026',
     author: 'Equipe AlleApp',
-    readTime: '4 min'
+    readTime: '4 min',
+    trending: true
   },
   {
     id: '5',
@@ -103,12 +105,8 @@ export const newsData: NewsArticle[] = [
       <p>A indústria de tecnologia, historicamente criticada por seu alto consumo de energia e geração de lixo eletrônico, está passando por uma revolução verde. A sustentabilidade tornou-se um pilar central no desenvolvimento de novos produtos e serviços.</p>
       <h2>Data Centers Sustentáveis</h2>
       <p>As grandes empresas de nuvem agora operam data centers alimentados 100% por energia renovável. Além disso, sistemas inovadores de resfriamento, como a submersão de servidores em líquidos não condutores, reduziram drasticamente o consumo de energia.</p>
-      <h2>Economia Circular de Hardware</h2>
-      <p>Fabricantes de smartphones e computadores estão adotando o design modular, facilitando o reparo e a atualização de componentes individuais. O uso de materiais reciclados, como alumínio e plásticos retirados do oceano, tornou-se o novo padrão da indústria.</p>
-      <h2>Software Eficiente</h2>
-      <p>A eficiência não se limita ao hardware. Desenvolvedores estão otimizando códigos para consumir menos processamento e, consequentemente, menos bateria. No AlleApp, nossa arquitetura foi desenhada para ser extremamente leve, prolongando a vida útil da bateria do seu dispositivo e reduzindo a pegada de carbono digital.</p>
     `,
-    category: 'Atualidades',
+    category: 'Sustentabilidade',
     imageUrl: 'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=1600&auto=format&fit=crop',
     date: '15 Mar 2026',
     author: 'Marina Costa',
@@ -123,15 +121,109 @@ export const newsData: NewsArticle[] = [
       <p>O smartphone tem sido o centro da nossa vida digital por quase duas décadas. No entanto, inovações recentes sugerem que o formato tradicional de "tela de vidro no bolso" pode estar com os dias contados.</p>
       <h2>Wearables Invisíveis</h2>
       <p>A tecnologia está se tornando cada vez mais integrada ao nosso corpo e roupas. Anéis inteligentes, tecidos conectados e lentes de contato com displays de realidade aumentada estão transferindo as funções do celular para dispositivos muito mais discretos.</p>
-      <h2>Interfaces Cérebro-Computador (BCI)</h2>
-      <p>Embora ainda em estágios iniciais para o consumidor geral, as interfaces neurais prometem permitir a interação com dispositivos digitais apenas com o pensamento, eliminando a necessidade de telas sensíveis ao toque ou comandos de voz.</p>
-      <h2>A Transição</h2>
-      <p>A mudança não acontecerá da noite para o dia. Veremos um período de transição onde os smartphones atuarão como "hubs" de processamento para esses novos dispositivos periféricos. O AlleApp está sendo projetado com uma arquitetura agnóstica de dispositivo, garantindo que sua vida digital permaneça organizada, independentemente de como você acessa a internet no futuro.</p>
     `,
-    category: 'Inovação',
+    category: 'Gadgets',
     imageUrl: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop',
     date: '10 Mar 2026',
     author: 'Equipe AlleApp',
     readTime: '7 min'
+  },
+  {
+    id: '7',
+    slug: 'ia-generativa-criacao-conteudo',
+    title: 'A revolução da IA Generativa na criação de conteúdo digital',
+    excerpt: 'Como modelos de linguagem e geradores de imagem estão mudando o trabalho de designers, escritores e criadores de vídeo.',
+    content: `
+      <p>A inteligência artificial generativa atingiu um nível de maturidade impressionante em 2026. Ferramentas que antes apenas auxiliavam, agora são co-criadoras ativas em agências de publicidade, estúdios de cinema e redações.</p>
+      <h2>O Novo Papel do Criador</h2>
+      <p>O foco mudou da execução técnica para a direção criativa. Profissionais agora atuam como "curadores" e "diretores" de IA, refinando prompts e selecionando os melhores resultados gerados pelas máquinas.</p>
+    `,
+    category: 'Inteligência Artificial',
+    imageUrl: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1600&auto=format&fit=crop',
+    date: '08 Mar 2026',
+    author: 'Lucas Fernandes',
+    readTime: '6 min',
+    trending: true
+  },
+  {
+    id: '8',
+    slug: 'baterias-estado-solido',
+    title: 'Baterias de estado sólido finalmente chegam aos eletrônicos de consumo',
+    excerpt: 'A nova tecnologia promete dobrar a autonomia de smartphones e notebooks, além de reduzir drasticamente o tempo de recarga.',
+    content: `
+      <p>Após anos de pesquisa e promessas, as baterias de estado sólido começam a ser integradas em dispositivos comerciais. Esta tecnologia substitui o eletrólito líquido inflamável por um material sólido, oferecendo maior densidade de energia e segurança.</p>
+      <h2>Adeus à ansiedade de bateria</h2>
+      <p>Com a nova tecnologia, espera-se que smartphones durem até três dias com uma única carga, e que veículos elétricos ultrapassem a marca de 1.000 km de autonomia. Além disso, o tempo de recarga de 0 a 80% caiu para menos de 10 minutos.</p>
+    `,
+    category: 'Gadgets',
+    imageUrl: 'https://images.unsplash.com/photo-1617783920365-c7002975fdc0?q=80&w=1600&auto=format&fit=crop',
+    date: '05 Mar 2026',
+    author: 'Roberto Almeida',
+    readTime: '4 min'
+  },
+  {
+    id: '9',
+    slug: 'startups-clima-tech',
+    title: 'O boom das startups "Climate Tech" no Brasil',
+    excerpt: 'Investimentos em empresas focadas em soluções climáticas atingem recorde histórico no ecossistema de inovação brasileiro.',
+    content: `
+      <p>O Brasil está se consolidando como um polo global de tecnologias voltadas para a sustentabilidade e mitigação das mudanças climáticas. Em 2026, o volume de capital de risco investido em "Climate Techs" superou o de fintechs pela primeira vez.</p>
+      <h2>Soluções Baseadas na Natureza</h2>
+      <p>Muitas dessas startups utilizam IA e imagens de satélite para monitorar o desmatamento, otimizar a agricultura de precisão e facilitar o mercado de créditos de carbono, unindo tecnologia de ponta com a preservação ambiental.</p>
+    `,
+    category: 'Sustentabilidade',
+    imageUrl: 'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1600&auto=format&fit=crop',
+    date: '02 Mar 2026',
+    author: 'Marina Costa',
+    readTime: '5 min'
+  },
+  {
+    id: '10',
+    slug: 'regulamentacao-ia-global',
+    title: 'O novo acordo global para a regulamentação da Inteligência Artificial',
+    excerpt: 'Líderes mundiais assinam tratado histórico para estabelecer limites éticos e de segurança no desenvolvimento de superinteligências.',
+    content: `
+      <p>Em um marco histórico para a governança tecnológica, mais de 100 países assinaram o Tratado Global de IA. O documento estabelece diretrizes rígidas para o desenvolvimento de modelos fundacionais e sistemas autônomos.</p>
+      <h2>Transparência e Auditoria</h2>
+      <p>As novas regras exigem que as empresas de tecnologia abram as "caixas-pretas" de seus algoritmos para auditorias independentes, garantindo que não haja vieses discriminatórios e que os sistemas sejam seguros para implantação em infraestruturas críticas.</p>
+    `,
+    category: 'Mercado Tech',
+    imageUrl: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1600&auto=format&fit=crop',
+    date: '28 Fev 2026',
+    author: 'Carlos Mendes',
+    readTime: '8 min',
+    trending: true
+  },
+  {
+    id: '11',
+    slug: 'ataques-ransomware-ia',
+    title: 'Hackers utilizam IA para criar ataques de ransomware hiper-personalizados',
+    excerpt: 'A evolução do cibercrime: como a inteligência artificial está sendo usada para automatizar a engenharia social e burlar defesas corporativas.',
+    content: `
+      <p>O jogo de gato e rato entre especialistas em segurança e cibercriminosos ganhou um novo capítulo. Hackers agora utilizam IA generativa para criar campanhas de phishing altamente convincentes, analisando o perfil das vítimas em redes sociais para personalizar as mensagens.</p>
+      <h2>Defesa Baseada em IA</h2>
+      <p>Para combater essa ameaça, as empresas estão adotando sistemas de defesa que também utilizam IA para identificar anomalias comportamentais na rede em tempo real, bloqueando ataques antes que a criptografia dos dados seja iniciada.</p>
+    `,
+    category: 'Cibersegurança',
+    imageUrl: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1600&auto=format&fit=crop',
+    date: '25 Fev 2026',
+    author: 'Ana Silva',
+    readTime: '6 min'
+  },
+  {
+    id: '12',
+    slug: 'computacao-quantica-nuvem',
+    title: 'Computação Quântica chega à nuvem para o público geral',
+    excerpt: 'Grandes provedores de cloud agora oferecem acesso a processadores quânticos para desenvolvedores e pesquisadores independentes.',
+    content: `
+      <p>A computação quântica deixou os laboratórios de pesquisa restritos e chegou à nuvem. Desenvolvedores agora podem alugar tempo de processamento em máquinas quânticas para resolver problemas complexos de otimização, simulação molecular e criptografia.</p>
+      <h2>Democratização do Poder de Cálculo</h2>
+      <p>Essa democratização promete acelerar descobertas na medicina, ciência dos materiais e logística, permitindo que startups e universidades compitam com grandes corporações na vanguarda da pesquisa científica.</p>
+    `,
+    category: 'Inovação',
+    imageUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1600&auto=format&fit=crop',
+    date: '20 Fev 2026',
+    author: 'Lucas Fernandes',
+    readTime: '5 min'
   }
 ];

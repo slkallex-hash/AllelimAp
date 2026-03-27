@@ -13,8 +13,11 @@ export default function NewsIndex() {
     ? newsData 
     : newsData.filter(article => article.category === activeCategory);
 
-  const featuredArticle = filteredNews[0];
-  const recentArticles = filteredNews.slice(1);
+  // Find a trending article for the featured spot, or just use the first one
+  const featuredArticle = filteredNews.find(article => article.trending) || filteredNews[0];
+  
+  // Exclude the featured article from the recent articles list
+  const recentArticles = filteredNews.filter(article => article.id !== featuredArticle?.id);
 
   return (
     <div className="min-h-screen bg-deep-black flex flex-col">
