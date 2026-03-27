@@ -35,10 +35,10 @@ export default function NewsSection() {
           >
             <Link 
               to="/noticias" 
-              className="group flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]"
+              className="group flex items-center gap-2 px-6 py-3 rounded-full bg-transparent border border-neon-blue/50 text-neon-blue hover:bg-neon-blue hover:text-deep-black font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,242,255,0.4)]"
             >
               Ver todas as notícias
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform text-neon-blue" />
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
         </div>
@@ -64,7 +64,7 @@ export default function NewsSection() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute top-4 left-4 z-20">
-                    <span className="px-3 py-1 bg-neon-purple/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider rounded-full">
+                    <span className="px-3 py-1 bg-deep-black/60 backdrop-blur-md border border-white/10 text-white/90 text-[10px] font-bold uppercase tracking-wider rounded-full">
                       {article.category}
                     </span>
                   </div>

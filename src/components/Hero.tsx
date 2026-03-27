@@ -41,11 +41,11 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 rounded-full bg-white text-black font-semibold hover:scale-105 transition-transform flex items-center justify-center gap-2">
+              <button className="px-8 py-4 rounded-full bg-white text-deep-black font-bold hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all flex items-center justify-center gap-2">
                 <Download size={20} />
                 Baixar Agora
               </button>
-              <button className="px-8 py-4 rounded-full glass-card text-white font-semibold hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
+              <button className="px-8 py-4 rounded-full bg-transparent border border-white/20 text-white font-bold hover:bg-white/10 hover:border-white/40 transition-all flex items-center justify-center gap-2">
                 <Smartphone size={20} />
                 Versão Web
               </button>

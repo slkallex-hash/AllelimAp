@@ -95,7 +95,7 @@ export default function Navbar() {
               </a>
             )
           ))}
-          <button className="relative overflow-hidden group bg-transparent border border-neon-blue/50 text-neon-blue px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 hover:bg-neon-blue hover:text-deep-black hover:shadow-[0_0_20px_rgba(0,242,255,0.4)]">
+          <button className="relative overflow-hidden group bg-white text-deep-black px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 hover:bg-white/90 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105">
             <span className="relative z-10">Baixar Agora</span>
           </button>
         </div>

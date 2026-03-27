@@ -25,7 +25,7 @@ export default function NewsArticle() {
           <p className="text-white/60 mb-8">A notícia que você está procurando não existe ou foi removida.</p>
           <button 
             onClick={() => navigate('/noticias')}
-            className="px-6 py-3 bg-brand-primary text-white rounded-full font-bold hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all"
+            className="px-6 py-3 bg-white text-deep-black rounded-full font-bold hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 transition-all"
           >
             Voltar para Notícias
           </button>
@@ -61,7 +61,7 @@ export default function NewsArticle() {
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-6">
-            <span className="px-3 py-1 bg-brand-primary/20 text-brand-primary border border-brand-primary/30 text-xs font-bold uppercase tracking-wider rounded-full">
+            <span className="px-3 py-1 bg-deep-black/60 backdrop-blur-md border border-white/10 text-white/90 text-[10px] font-bold uppercase tracking-wider rounded-full">
               {article.category}
             </span>
             <span className="text-white/40 text-sm flex items-center gap-1">
@@ -92,7 +92,7 @@ export default function NewsArticle() {
               </div>
             </div>
             
-            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-white/80 transition-colors text-sm font-medium">
+            <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-transparent border border-neon-blue/50 text-neon-blue hover:bg-neon-blue hover:text-deep-black font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,242,255,0.4)] text-sm">
               <Share2 size={16} /> Compartilhar
             </button>
           </div>

@@ -86,7 +86,7 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <button className="w-full py-4 rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-white/10 transition-colors">
+            <button className="w-full py-4 rounded-2xl bg-transparent border border-white/20 text-white font-bold hover:bg-white/10 hover:border-white/40 transition-all">
               Começar Grátis
             </button>
           </motion.div>
@@ -125,7 +125,7 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <button className="relative z-10 w-full py-4 rounded-2xl bg-white text-black font-bold hover:scale-[1.02] active:scale-95 transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+            <button className="relative z-10 w-full py-4 rounded-2xl bg-white text-deep-black font-bold hover:scale-[1.02] active:scale-95 transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">
               Assinar Premium
             </button>
           </motion.div>
