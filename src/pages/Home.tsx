@@ -6,7 +6,7 @@ import Benefits from '../components/Benefits';
 import Testimonials from '../components/Testimonials';
 import Gallery from '../components/Gallery';
 import PricingSection from '../components/PricingSection';
-import NewsSection from '../components/NewsSection';
+import PortalNewsSection from '../components/PortalNewsSection';
 import Stats from '../components/Stats';
 import TargetAudience from '../components/TargetAudience';
 import EmailCapture from '../components/EmailCapture';
@@ -24,6 +24,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Stats />
+      
+      {/* Portal News Section - High Prominence */}
+      <PortalNewsSection />
+      
       <HowItWorks />
       <Differential />
       <InlineCTA 
@@ -39,7 +43,6 @@ export default function Home() {
       <Gallery />
       <Testimonials />
       <PricingSection />
-      <NewsSection />
       <EmailCapture />
       <CTA />
       <FAQ />
