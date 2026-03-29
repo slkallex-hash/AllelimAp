@@ -26,29 +26,50 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-primary"></span>
               </span>
-              Atualizado ao vivo no AI Studio! 🚀
+              O App de Automação #1 do Brasil 🚀
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 text-white leading-[1.1]">
-              A Nova Era da Sua <br />
+            <h1 className="text-5xl md:text-8xl font-bold tracking-tighter mb-6 text-white leading-[1.05]">
+              Escalone sua <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-neon-purple to-neon-blue">
-                Vida Digital
+                Produtividade
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-white/60 mb-10 max-w-xl font-light leading-relaxed">
-              Domine sua rotina com o AlleApp 2.0. Uma experiência fluida, segura e inteligente, desenhada para quem exige o máximo de cada segundo.
+            <p className="text-lg md:text-2xl text-white/70 mb-10 max-w-2xl font-light leading-relaxed">
+              A plataforma completa para automatizar seu fluxo de trabalho, economizar horas diárias e escalar seu negócio com inteligência artificial de ponta.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 rounded-full bg-white text-deep-black font-bold hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all flex items-center justify-center gap-2">
-                <Download size={20} />
-                Baixar Agora
+            <div className="flex flex-col sm:flex-row gap-5 mb-16">
+              <button className="px-10 py-5 rounded-2xl bg-white text-deep-black font-bold hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] transition-all flex items-center justify-center gap-2 text-lg">
+                Começar agora
               </button>
-              <button className="px-8 py-4 rounded-full bg-transparent border border-white/20 text-white font-bold hover:bg-white/10 hover:border-white/40 transition-all flex items-center justify-center gap-2">
-                <Smartphone size={20} />
-                Versão Web
+              <button className="px-10 py-5 rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-2 text-lg backdrop-blur-md">
+                Testar grátis
               </button>
+            </div>
+
+            {/* Trusted By Section */}
+            <div className="pt-8 border-t border-white/5">
+              <p className="text-xs font-bold text-white/30 uppercase tracking-[0.3em] mb-6">Utilizado por equipes globais</p>
+              <div className="flex flex-wrap gap-8 opacity-30 grayscale hover:grayscale-0 transition-all duration-500">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 bg-white rounded-full" />
+                  <span className="font-bold text-white text-sm tracking-tighter">TECHFLOW</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 bg-white rounded-sm rotate-45" />
+                  <span className="font-bold text-white text-sm tracking-tighter">NEXUS</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-4 bg-white rounded-full" />
+                  <span className="font-bold text-white text-sm tracking-tighter">ORBIT</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 border-2 border-white rounded-full" />
+                  <span className="font-bold text-white text-sm tracking-tighter">CORE</span>
+                </div>
+              </div>
             </div>
           </motion.div>
 

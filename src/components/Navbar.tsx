@@ -20,13 +20,12 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Home', href: '/#home' },
-    { name: 'Sobre', href: '/#about' },
-    { name: 'Planos', href: '/planos' },
+    { name: 'Como Funciona', href: '/#how-it-works' },
+    { name: 'Benefícios', href: '/#benefits' },
+    { name: 'Depoimentos', href: '/#testimonials' },
+    { name: 'Planos', href: '/#pricing' },
     { name: 'Notícias', href: '/noticias' },
-    { name: 'Galeria', href: '/#gallery' },
     { name: 'FAQ', href: '/#faq' },
-    { name: 'Privacidade', href: '/politica-de-privacidade' },
-    { name: 'Contato', href: '/#contact' },
   ];
 
   const handleLinkClick = (href: string) => {

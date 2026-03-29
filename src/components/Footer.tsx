@@ -32,9 +32,9 @@ export default function Footer() {
             <h4 className="text-xl font-display font-bold mb-8 text-white tracking-tight">Navegação</h4>
             <ul className="space-y-4 text-slate-500">
               <li><a href="/#home" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Home</a></li>
-              <li><a href="/#about" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Sobre</a></li>
-              <li><a href="/planos" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Planos</a></li>
-              <li><a href="/#gallery" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Galeria</a></li>
+              <li><a href="/#how-it-works" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Como Funciona</a></li>
+              <li><a href="/#benefits" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Benefícios</a></li>
+              <li><a href="/#pricing" className="hover:text-neon-blue transition-colors flex items-center gap-2 group"><span className="w-1.5 h-1.5 rounded-full bg-neon-blue opacity-0 group-hover:opacity-100 transition-opacity" /> Planos</a></li>
             </ul>
           </div>
 

@@ -18,17 +18,17 @@ export default function CTA() {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-primary/10 via-transparent to-neon-purple/10 -z-10" />
           
           <h2 className="text-4xl md:text-7xl font-display font-extrabold text-white mb-8 tracking-tighter leading-tight">
-            Pronto para o <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/40">próximo nível?</span>
+            Pare de perder <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/40">tempo e dinheiro.</span>
           </h2>
           
           <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto font-light">
-            Junte-se a milhares de usuários que já transformaram sua rotina digital com o AlleApp.
+            A oferta de lançamento com recursos premium gratuitos acaba hoje. Junte-se a mais de 50.000 usuários que já automatizaram suas vidas.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="group relative px-10 py-5 bg-white text-black rounded-2xl font-bold text-xl transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
-              Baixar Agora Gratuitamente
+              Baixar App Agora
             </button>
           </div>
           

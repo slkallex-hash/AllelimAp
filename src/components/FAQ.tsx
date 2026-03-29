@@ -7,19 +7,19 @@ export default function FAQ() {
   const faqs = [
     {
       question: "O aplicativo é gratuito?",
-      answer: "Sim! O AppLaunch possui uma versão gratuita completa. Oferecemos também um plano Premium para usuários que desejam recursos avançados de automação e armazenamento ilimitado."
+      answer: "Sim! O AlleApp possui uma versão gratuita para você começar a automatizar. Oferecemos também um plano Pro para usuários que desejam automações ilimitadas e integrações avançadas."
     },
     {
-      question: "Como baixar o aplicativo?",
-      answer: "Você pode baixar o aplicativo diretamente através dos botões de download nesta página ou procurando por 'AlleApp' na Google Play Store."
+      question: "Preciso saber programar?",
+      answer: "Não! O AlleApp foi construído para ser 100% visual e intuitivo. Se você sabe usar um smartphone, você sabe criar automações poderosas conosco."
     },
     {
-      question: "O aplicativo é seguro?",
-      answer: "Absolutamente. Utilizamos criptografia AES-256 para todos os dados armazenados e não compartilhamos suas informações com terceiros. Sua privacidade é nossa prioridade número um."
+      question: "É seguro conectar minhas contas?",
+      answer: "Absolutamente. Utilizamos criptografia de nível militar (AES-256) para todas as conexões. Nós não lemos suas mensagens e não vendemos seus dados. Sua privacidade é garantida."
     },
     {
-      question: "Precisa de internet para usar?",
-      answer: "Muitas funcionalidades básicas funcionam offline. No entanto, para sincronizar seus dados entre dispositivos e receber atualizações em tempo real, uma conexão com a internet é necessária."
+      question: "Como posso ganhar dinheiro com o app?",
+      answer: "Você pode automatizar respostas a clientes, criar fluxos de vendas no WhatsApp, gerenciar postagens em redes sociais e muito mais, permitindo que você escale seus negócios sem contratar mais pessoas."
     }
   ];
 

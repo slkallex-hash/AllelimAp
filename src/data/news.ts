@@ -16,6 +16,43 @@ export const categories = ['Todas', 'Inteligência Artificial', 'Cibersegurança
 
 export const newsData: NewsArticle[] = [
   {
+    id: '13',
+    slug: 'alleapp-v3-lancamento',
+    title: 'AlleApp V3: A nova era da automação inteligente chegou',
+    excerpt: 'Conheça os novos recursos da versão 3.0, incluindo integração profunda com GPT-4 e novos módulos de ganhos passivos.',
+    content: `
+      <p>Estamos entusiasmados em anunciar o lançamento do AlleApp V3. Esta atualização representa o maior salto tecnológico desde a nossa fundação, trazendo ferramentas que antes pareciam impossíveis.</p>
+      <h2>Integração com GPT-4</h2>
+      <p>Agora você pode usar o poder do GPT-4 diretamente em suas automações. Crie respostas inteligentes, resuma documentos e gere conteúdo original de forma totalmente automatizada.</p>
+      <h2>Novos Módulos de Monetização</h2>
+      <p>Introduzimos novos conectores para plataformas de afiliados e e-commerce, permitindo que você escale suas operações de venda sem intervenção humana.</p>
+    `,
+    category: 'Inovação',
+    imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop',
+    date: '29 Mar 2026',
+    author: 'Equipe AlleApp',
+    readTime: '5 min',
+    trending: true
+  },
+  {
+    id: '14',
+    slug: 'como-economizar-tempo-com-alleapp',
+    title: '5 Maneiras de economizar 10 horas por semana com o AlleApp',
+    excerpt: 'Um guia prático para iniciantes que desejam maximizar sua produtividade usando nossos modelos de automação prontos.',
+    content: `
+      <p>Tempo é o recurso mais valioso que temos. No AlleApp, nossa missão é devolver esse tempo para você. Aqui estão 5 estratégias comprovadas pelos nossos usuários Pro.</p>
+      <h2>1. Triagem Automática de E-mails</h2>
+      <p>Deixe a IA classificar e responder aos e-mails de rotina, deixando apenas o que é essencial para sua atenção.</p>
+      <h2>2. Sincronização de CRM</h2>
+      <p>Nunca mais copie e cole dados entre ferramentas. O AlleApp mantém tudo atualizado em tempo real.</p>
+    `,
+    category: 'Produtividade com IA',
+    imageUrl: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1600&auto=format&fit=crop',
+    date: '28 Mar 2026',
+    author: 'Ana Silva',
+    readTime: '7 min'
+  },
+  {
     id: '1',
     slug: 'inteligencia-artificial-transformando-rotinas',
     title: 'Como a Inteligência Artificial está transformando nossas rotinas diárias',
