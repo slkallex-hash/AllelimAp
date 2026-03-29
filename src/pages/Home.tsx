@@ -25,24 +25,29 @@ export default function Home() {
       <Hero />
       <Stats />
       
-      {/* Portal News Section - High Prominence */}
-      <PortalNewsSection />
-      
       <HowItWorks />
       <Differential />
+      
       <InlineCTA 
         title="Pronto para automatizar seu primeiro fluxo?" 
         buttonText="Começar grátis" 
       />
+      
       <Benefits />
+      <Gallery />
       <TargetAudience />
+      
       <InlineCTA 
         title="Junte-se a milhares de profissionais de elite." 
         buttonText="Testar agora" 
       />
-      <Gallery />
+      
       <Testimonials />
       <PricingSection />
+      
+      {/* Portal News Section - SEO & Authority */}
+      <PortalNewsSection />
+      
       <EmailCapture />
       <CTA />
       <FAQ />
