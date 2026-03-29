@@ -53,6 +53,25 @@ export const newsData: NewsArticle[] = [
     readTime: '7 min'
   },
   {
+    id: '15',
+    slug: 'ganhar-dinheiro-online-automacao',
+    title: 'Guia Definitivo: Como ganhar dinheiro online usando automação em 2026',
+    excerpt: 'Descubra as estratégias mais lucrativas para criar fluxos de renda passiva utilizando o AlleApp e outras ferramentas de IA.',
+    content: `
+      <p>Ganhar dinheiro online não é mais um bicho de sete cabeças. Com a chegada de ferramentas de automação acessíveis, qualquer pessoa pode criar sistemas que geram receita enquanto dormem.</p>
+      <h2>Marketing de Afiliados Automatizado</h2>
+      <p>Use o AlleApp para monitorar ofertas, criar conteúdo promocional e distribuir em suas redes sociais automaticamente. A consistência é a chave para o sucesso no marketing de afiliados.</p>
+      <h2>Venda de Serviços de Automação</h2>
+      <p>Existe uma demanda crescente por profissionais que saibam configurar fluxos de trabalho para empresas. Você pode usar o AlleApp para entregar resultados rápidos e escaláveis para seus clientes.</p>
+    `,
+    category: 'Mercado Tech',
+    imageUrl: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1600&auto=format&fit=crop',
+    date: '26 Mar 2026',
+    author: 'Carlos Mendes',
+    readTime: '6 min',
+    trending: true
+  },
+  {
     id: '1',
     slug: 'inteligencia-artificial-transformando-rotinas',
     title: 'Como a Inteligência Artificial está transformando nossas rotinas diárias',

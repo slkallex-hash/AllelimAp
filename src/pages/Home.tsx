@@ -10,6 +10,7 @@ import NewsSection from '../components/NewsSection';
 import Stats from '../components/Stats';
 import TargetAudience from '../components/TargetAudience';
 import EmailCapture from '../components/EmailCapture';
+import Differential from '../components/Differential';
 import CTA from '../components/CTA';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
@@ -24,15 +25,16 @@ export default function Home() {
       <Hero />
       <Stats />
       <HowItWorks />
+      <Differential />
       <InlineCTA 
         title="Pronto para automatizar seu primeiro fluxo?" 
-        buttonText="Começar agora" 
+        buttonText="Começar grátis" 
       />
       <Benefits />
       <TargetAudience />
       <InlineCTA 
         title="Junte-se a milhares de profissionais de elite." 
-        buttonText="Testar grátis" 
+        buttonText="Testar agora" 
       />
       <Gallery />
       <Testimonials />

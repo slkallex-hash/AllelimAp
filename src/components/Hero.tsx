@@ -37,15 +37,15 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg md:text-2xl text-white/70 mb-10 max-w-2xl font-light leading-relaxed">
-              A plataforma completa para automatizar seu fluxo de trabalho, economizar horas diárias e escalar seu negócio com inteligência artificial de ponta.
+              O AlleApp automatiza suas tarefas repetitivas, economiza horas do seu dia e escala seus ganhos no piloto automático. Configure em minutos e veja a mágica acontecer.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-5 mb-16">
               <button className="px-10 py-5 rounded-2xl bg-white text-deep-black font-bold hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] transition-all flex items-center justify-center gap-2 text-lg">
-                Começar agora
+                Começar grátis
               </button>
               <button className="px-10 py-5 rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-2 text-lg backdrop-blur-md">
-                Testar grátis
+                Testar agora
               </button>
             </div>
 
