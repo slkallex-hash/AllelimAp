@@ -15,6 +15,7 @@ import CTA from '../components/CTA';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import KadamAd from '../components/KadamAd';
 
 import InlineCTA from '../components/InlineCTA';
 
@@ -23,9 +24,11 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <Hero />
+      <KadamAd />
       <Stats />
       
       <HowItWorks />
+      <KadamAd />
       <Differential />
       
       <InlineCTA 
@@ -34,6 +37,7 @@ export default function Home() {
       />
       
       <Benefits />
+      <KadamAd />
       <Gallery />
       <TargetAudience />
       
@@ -43,12 +47,14 @@ export default function Home() {
       />
       
       <Testimonials />
+      <KadamAd />
       <PricingSection />
       
       {/* Portal News Section - SEO & Authority */}
       <PortalNewsSection />
       
       <EmailCapture />
+      <KadamAd />
       <CTA />
       <FAQ />
       <Contact />
