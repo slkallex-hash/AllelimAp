@@ -29,7 +29,7 @@ export default function KadamAd() {
 
   return (
     <div className="w-full flex justify-center my-8 overflow-hidden">
-      <div className="dZnDsn421364 min-h-[50px] min-w-[300px]"></div>
+      <div className="dZnDsn421364 w-[300px] h-[250px]"></div>
     </div>
   );
 }
