@@ -11,20 +11,12 @@ export default function KadamAd() {
         refresh: false,
         next: 0
     });
-    
-    if (!document.querySelector('script[src="https://hdbkome.com/6s2kbgt0.js"]')) {
-      const s = document.createElement('script');
-      s.setAttribute('async', 'true');
-      s.setAttribute('charset', 'utf-8');
-      s.setAttribute('data-cfasync', 'false');
-      s.src = 'https://hdbkome.com/6s2kbgt0.js'; 
-      document.head && document.head.appendChild(s);
-    }
   }, []);
 
   return (
     <div className="w-full flex justify-center items-center overflow-hidden min-h-[250px] bg-white/5 rounded-xl border border-white/10">
-      <div className="esGqFf421361"></div>
+      {/* Kadam Ad Slot - Using both class and ID for compatibility */}
+      <div id="esGqFf421361" className="esGqFf421361"></div>
     </div>
   );
 }
