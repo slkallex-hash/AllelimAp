@@ -15,6 +15,7 @@ import CTA from '../components/CTA';
 import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import KadamAd from '../components/KadamAd';
 
 import InlineCTA from '../components/InlineCTA';
 
@@ -24,6 +25,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Stats />
+      
+      {/* 1 Anúncio Kadam Isolado */}
+      <div className="max-w-7xl mx-auto px-6 py-8 w-full">
+        <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-2">Publicidade</p>
+        <KadamAd />
+      </div>
       
       <HowItWorks />
       <Differential />
@@ -35,6 +42,18 @@ export default function Home() {
       
       <Benefits />
       <Gallery />
+      
+      {/* Grid de 4 Anúncios Kadam */}
+      <div className="max-w-7xl mx-auto px-6 py-16 w-full">
+        <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-6">Publicidade</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <KadamAd />
+          <KadamAd />
+          <KadamAd />
+          <KadamAd />
+        </div>
+      </div>
+      
       <TargetAudience />
       
       <InlineCTA 
