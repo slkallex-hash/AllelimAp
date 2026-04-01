@@ -33,10 +33,10 @@
     text-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
   }
   .glass-card {
-    @apply bg-white/[0.03] backdrop-blur-2xl border border-white/[0.08] shadow-2xl;
+    @apply bg-white/[0.05] border border-white/[0.08] shadow-2xl md:backdrop-blur-xl;
   }
   .glass-nav {
-    @apply bg-deep-black/60 backdrop-blur-xl border-b border-white/[0.05];
+    @apply bg-deep-black/80 border-b border-white/[0.05] md:backdrop-blur-lg;
   }
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/40;

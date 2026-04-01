@@ -67,16 +67,18 @@ export default function Gallery() {
           {screens.map((screen, index) => (
             <motion.div
               key={screen.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative aspect-video rounded-3xl overflow-hidden shadow-2xl transition-all cursor-pointer border border-white/10 bg-white/5 hover:bg-white/10"
             >
               <img 
                 src={screen.image} 
                 alt={screen.title} 
                 className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700"
+                loading="lazy"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-deep-black via-deep-black/40 to-transparent p-8 flex flex-col justify-end">
                 <div className="flex justify-between items-start mb-4">

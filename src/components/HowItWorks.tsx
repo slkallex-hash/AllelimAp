@@ -65,13 +65,15 @@ export default function HowItWorks() {
                   src={step.image} 
                   alt={step.title} 
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-black via-transparent to-transparent" />
                 
                 {/* Overlay details */}
-                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10">
+                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/5 md:backdrop-blur-md border border-white/10">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <div className="w-2 h-2 rounded-full bg-emerald-500" />
                     <span className="text-[10px] text-white/60 font-bold uppercase tracking-widest">Módulo Ativo</span>
                   </div>
                 </div>

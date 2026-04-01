@@ -5,46 +5,45 @@ import { Download, Smartphone, Shield, Zap } from 'lucide-react';
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-deep-black">
-      {/* Cinematic Background */}
+      {/* Cinematic Background - Optimized */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] bg-brand-primary/20 blur-[120px] rounded-full animate-pulse opacity-50" />
-        <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-neon-purple/20 blur-[120px] rounded-full animate-pulse delay-1000 opacity-50" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.05),transparent_70%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_80%)]" />
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-brand-primary/10 blur-[80px] rounded-full hidden md:block" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-neon-purple/10 blur-[80px] rounded-full hidden md:block" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.03),transparent_70%)]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-left"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-white/60 text-[10px] font-bold uppercase tracking-[0.2em] mb-8">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
+                <span className="absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-primary"></span>
               </span>
               O App de Automação #1 do Brasil 🚀
             </div>
             
-            <h1 className="text-5xl md:text-8xl font-bold tracking-tighter mb-6 text-white leading-[1.05]">
+            <h1 className="text-4xl md:text-8xl font-bold tracking-tighter mb-6 text-white leading-[1.05]">
               Escalone sua <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-neon-purple to-neon-blue">
                 Produtividade
               </span>
             </h1>
             
-            <p className="text-lg md:text-2xl text-white/70 mb-10 max-w-2xl font-light leading-relaxed">
+            <p className="text-base md:text-2xl text-white/70 mb-10 max-w-2xl font-light leading-relaxed">
               O AlleApp automatiza suas tarefas repetitivas, economiza horas do seu dia e escala seus ganhos no piloto automático. Configure em minutos e veja a mágica acontecer.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-5 mb-16">
-              <button className="px-10 py-5 rounded-2xl bg-white text-deep-black font-bold hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] transition-all flex items-center justify-center gap-2 text-lg">
+              <button className="px-10 py-5 rounded-2xl bg-white text-deep-black font-bold hover:scale-105 transition-all flex items-center justify-center gap-2 text-lg">
                 Começar grátis
               </button>
-              <button className="px-10 py-5 rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-white/10 hover:border-white/30 transition-all flex items-center justify-center gap-2 text-lg backdrop-blur-md">
+              <button className="px-10 py-5 rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-white/10 transition-all flex items-center justify-center gap-2 text-lg md:backdrop-blur-md">
                 Testar agora
               </button>
             </div>
@@ -86,7 +85,7 @@ export default function Hero() {
                 <div className="p-8 relative z-10 flex flex-col h-full">
                   {/* Futuristic App UI Mockup */}
                   <div className="flex items-center gap-4 mb-6">
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=150&auto=format&fit=crop" alt="Avatar" className="w-12 h-12 rounded-xl object-cover border border-white/20" />
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=150&auto=format&fit=crop" alt="Avatar" className="w-12 h-12 rounded-xl object-cover border border-white/20" loading="lazy" referrerPolicy="no-referrer" />
                     <div>
                       <div className="h-3 w-20 bg-white/20 rounded-full mb-2" />
                       <div className="h-2 w-12 bg-white/10 rounded-full" />
@@ -94,7 +93,7 @@ export default function Hero() {
                   </div>
                   
                   <div className="relative w-full h-32 rounded-2xl overflow-hidden mb-6 border border-white/10">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" alt="Dashboard" className="w-full h-full object-cover opacity-80" />
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" alt="Dashboard" className="w-full h-full object-cover opacity-80" loading="lazy" referrerPolicy="no-referrer" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4">
                       <div className="h-3 w-24 bg-white/30 rounded-full mb-2" />
                       <div className="h-2 w-16 bg-white/20 rounded-full" />
@@ -103,16 +102,16 @@ export default function Hero() {
                   
                   <div className="grid grid-cols-2 gap-4 flex-1">
                     <div className="relative rounded-2xl overflow-hidden border border-white/10 group">
-                      <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?q=80&w=300&auto=format&fit=crop" alt="Feature 1" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                      <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?q=80&w=300&auto=format&fit=crop" alt="Feature 1" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" loading="lazy" referrerPolicy="no-referrer" />
                     </div>
                     <div className="relative rounded-2xl overflow-hidden border border-white/10 group">
-                      <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=300&auto=format&fit=crop" alt="Feature 2" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                      <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=300&auto=format&fit=crop" alt="Feature 2" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" loading="lazy" referrerPolicy="no-referrer" />
                     </div>
                     <div className="relative rounded-2xl overflow-hidden border border-white/10 group">
-                      <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=300&auto=format&fit=crop" alt="Feature 3" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                      <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=300&auto=format&fit=crop" alt="Feature 3" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" loading="lazy" referrerPolicy="no-referrer" />
                     </div>
                     <div className="relative rounded-2xl overflow-hidden border border-white/10 group">
-                      <img src="https://images.unsplash.com/photo-1634152962476-4b8a00e1915c?q=80&w=300&auto=format&fit=crop" alt="Feature 4" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
+                      <img src="https://images.unsplash.com/photo-1634152962476-4b8a00e1915c?q=80&w=300&auto=format&fit=crop" alt="Feature 4" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" loading="lazy" referrerPolicy="no-referrer" />
                     </div>
                   </div>
                 </div>
