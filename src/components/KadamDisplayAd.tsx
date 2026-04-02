@@ -14,9 +14,9 @@ export default function KadamDisplayAd() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center items-center overflow-hidden min-h-[250px] bg-white/5 rounded-xl border border-white/10">
+    <div className="w-[300px] h-[240px] mx-auto flex justify-center items-center overflow-hidden bg-white/5 rounded-xl border border-white/10">
       {/* Kadam Display Ad Slot - Using both class and ID for compatibility */}
-      <div id="Rsggar421361" className="Rsggar421361"></div>
+      <div id="Rsggar421361" className="Rsggar421361 w-full h-full"></div>
     </div>
   );
 }
