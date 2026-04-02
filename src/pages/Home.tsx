@@ -16,7 +16,6 @@ import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import KadamAd from '../components/KadamAd';
-import HilltopBanner from '../components/HilltopBanner';
 
 import InlineCTA from '../components/InlineCTA';
 
@@ -26,11 +25,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Stats />
-      
-      {/* HilltopAds Banner 300x250 */}
-      <div className="max-w-7xl mx-auto px-6 w-full">
-        <HilltopBanner />
-      </div>
       
       {/* 1 Anúncio Kadam Isolado */}
       <div className="max-w-7xl mx-auto px-6 py-8 w-full">
@@ -77,11 +71,6 @@ export default function Home() {
       <CTA />
       <FAQ />
       <Contact />
-      
-      {/* HilltopAds Banner 300x250 */}
-      <div className="max-w-7xl mx-auto px-6 w-full">
-        <HilltopBanner />
-      </div>
       
       <Footer />
     </div>
