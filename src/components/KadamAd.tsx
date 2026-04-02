@@ -5,7 +5,7 @@ export default function KadamAd() {
     const win = window as any;
     win.k_init = win.k_init || [];
     win.k_init.push({
-        id: 'esGqFf421361',
+        id: 'RGzsqy421364',
         type: 'bn',
         domain: 'hdbkome.com',
         refresh: false,
@@ -15,8 +15,8 @@ export default function KadamAd() {
 
   return (
     <div className="w-[300px] h-[240px] mx-auto flex justify-center items-center overflow-hidden bg-white/5 rounded-xl border border-white/10">
-      {/* Kadam Ad Slot - Using both class and ID for compatibility */}
-      <div id="esGqFf421361" className="esGqFf421361 w-full h-full"></div>
+      {/* Kadam Ad Slot */}
+      <div id="RGzsqy421364" className="RGzsqy421364 w-full h-full"></div>
     </div>
   );
 }
