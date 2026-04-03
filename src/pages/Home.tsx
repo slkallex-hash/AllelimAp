@@ -16,6 +16,7 @@ import FAQ from '../components/FAQ';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import KadamAd from '../components/KadamAd';
+import MyBidAd from '../components/MyBidAd';
 
 import InlineCTA from '../components/InlineCTA';
 
@@ -30,6 +31,12 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 py-8 w-full">
         <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-2">Publicidade</p>
         <KadamAd />
+      </div>
+
+      {/* 1 Anúncio MyBid Isolado */}
+      <div className="max-w-7xl mx-auto px-6 py-4 w-full">
+        <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-2">Publicidade</p>
+        <MyBidAd />
       </div>
       
       <HowItWorks />
@@ -76,6 +83,12 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 py-8 w-full">
         <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-2">Publicidade</p>
         <KadamAd />
+      </div>
+
+      {/* 1 Anúncio MyBid Isolado */}
+      <div className="max-w-7xl mx-auto px-6 py-4 w-full">
+        <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-2">Publicidade</p>
+        <MyBidAd />
       </div>
 
       <Footer />
