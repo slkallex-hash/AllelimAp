@@ -24,6 +24,17 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
+      
+      {/* 3 Anúncios MyBid no Topo */}
+      <div className="max-w-7xl mx-auto px-6 pt-24 pb-4 w-full">
+        <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-4">Publicidade</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <MyBidAd admpid="434873" />
+          <MyBidAd admpid="434873" />
+          <MyBidAd admpid="434873" />
+        </div>
+      </div>
+
       <Hero />
       <Stats />
       

@@ -1,6 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 
-export default function MyBidAd() {
+interface MyBidAdProps {
+  admpid?: string;
+}
+
+export default function MyBidAd({ admpid = '434871' }: MyBidAdProps) {
   const adRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -12,7 +16,7 @@ export default function MyBidAd() {
     const script = document.createElement('script');
     script.async = true;
     script.src = 'https://js.mbidadm.com/static/scripts.js';
-    script.setAttribute('data-admpid', '434871');
+    script.setAttribute('data-admpid', admpid);
 
     adRef.current.appendChild(script);
 
@@ -21,7 +25,7 @@ export default function MyBidAd() {
         adRef.current.removeChild(script);
       }
     };
-  }, []);
+  }, [admpid]);
 
   return (
     <div className="w-full flex justify-center items-center my-6">
