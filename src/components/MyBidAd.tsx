@@ -1,39 +1,50 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 interface MyBidAdProps {
   admpid?: string;
 }
 
 export default function MyBidAd({ admpid = '434871' }: MyBidAdProps) {
-  const adRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!adRef.current) return;
-
-    // Evita duplicar o script caso o componente re-renderize
-    if (adRef.current.querySelector('script')) return;
-
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://js.mbidadm.com/static/scripts.js';
-    script.setAttribute('data-admpid', admpid);
-
-    adRef.current.appendChild(script);
-
-    return () => {
-      if (adRef.current && adRef.current.contains(script)) {
-        adRef.current.removeChild(script);
-      }
-    };
-  }, [admpid]);
+  // Usamos um iframe com srcDoc para garantir que o script do anúncio 
+  // seja executado corretamente. Redes de anúncios de banners geralmente usam 
+  // document.write ou document.currentScript, que falham quando injetados 
+  // dinamicamente pelo React. O iframe isola e resolve esse problema.
+  const adHtml = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          body { 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            background: transparent; 
+            overflow: hidden; 
+          }
+        </style>
+      </head>
+      <body>
+        <script async src="https://js.mbidadm.com/static/scripts.js" data-admpid="${admpid}"></script>
+      </body>
+    </html>
+  `;
 
   return (
-    <div className="w-full flex justify-center items-center my-6">
-      <div 
-        ref={adRef} 
-        className="mybid-ad-container flex justify-center items-center bg-white/5 rounded-xl border border-white/10 overflow-hidden min-h-[250px] w-full max-w-[300px] sm:max-w-[728px]"
-      >
-        {/* O anúncio da MyBid será injetado aqui pelo script */}
+    <div className="w-full flex justify-center items-center my-2">
+      <div className="mybid-ad-container flex justify-center items-center bg-white/5 rounded-xl border border-white/10 overflow-hidden min-h-[250px] w-full max-w-[300px] sm:max-w-[728px]">
+        <iframe
+          title={`MyBid-Ad-${admpid}`}
+          srcDoc={adHtml}
+          width="100%"
+          height="250"
+          frameBorder="0"
+          scrolling="no"
+          style={{ border: 'none', overflow: 'hidden' }}
+        />
       </div>
     </div>
   );
