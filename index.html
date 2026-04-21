@@ -41,10 +41,16 @@
     </script>
   </head>
   <body>
-    <!-- Container isolado para ancorar anúncios de vídeo com dimensões (anúncios não costumam renderizar em áreas 0x0). Use o Seletor CSS: #mybid-video-anchor -->
-    <div id="mybid-video-anchor" style="position: relative; z-index: 50; width: 100%; min-height: 250px; max-width: 400px; margin: 0 auto; display: block;"></div>
+    <!-- Reprodutor de vídeo atuando como "isca" para o Overlay da MyBid. 
+         IMPORTANTE: Lá na MyBid, em "Seletor CSS", você precisa colocar: video 
+    -->
+    <div style="position: relative; z-index: 50; width: 100%; max-width: 640px; margin: 2rem auto; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);">
+      <video id="mybid-video-player" controls muted playsinline poster="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop" style="width: 100%; aspect-ratio: 16/9; background-color: #000;">
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+      </video>
+    </div>
 
-    <!-- MyBid Video Ad Script (Movido para o body para não conflitar com a renderização do React) -->
+    <!-- MyBid Video Ad Script -->
     <script async src="https://js.mbidadm.com/static/scripts.js" data-admpid="437501"></script>
 
     <div id="root"></div>
