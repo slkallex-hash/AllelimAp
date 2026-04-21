@@ -41,8 +41,8 @@
     </script>
   </head>
   <body>
-    <!-- Container isolado para ancorar anúncios de vídeo. Use o Seletor CSS: #mybid-video-anchor -->
-    <div id="mybid-video-anchor" style="position: relative; z-index: 50;"></div>
+    <!-- Container isolado para ancorar anúncios de vídeo com dimensões (anúncios não costumam renderizar em áreas 0x0). Use o Seletor CSS: #mybid-video-anchor -->
+    <div id="mybid-video-anchor" style="position: relative; z-index: 50; width: 100%; min-height: 250px; max-width: 400px; margin: 0 auto; display: block;"></div>
 
     <!-- MyBid Video Ad Script (Movido para o body para não conflitar com a renderização do React) -->
     <script async src="https://js.mbidadm.com/static/scripts.js" data-admpid="437501"></script>
