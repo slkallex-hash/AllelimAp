@@ -36,12 +36,6 @@ export default function Home() {
 
       <Hero />
       <Stats />
-
-      {/* 1 Anúncio MyBid Isolado */}
-      <div className="max-w-7xl mx-auto px-6 py-4 w-full">
-        <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-2">Publicidade</p>
-        <MyBidAd admpid="434881" />
-      </div>
       
       <HowItWorks />
       <Differential />
@@ -71,12 +65,6 @@ export default function Home() {
       <CTA />
       <FAQ />
       <Contact />
-
-      {/* 1 Anúncio MyBid Isolado */}
-      <div className="max-w-7xl mx-auto px-6 py-4 w-full">
-        <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-2">Publicidade</p>
-        <MyBidAd admpid="434881" />
-      </div>
 
       <Footer />
     </div>
