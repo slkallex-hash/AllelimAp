@@ -28,9 +28,9 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 pt-24 pb-4 w-full">
         <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-4">Publicidade</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <MyBidAd admpid="438010" />
-          <MyBidAd admpid="438010" />
-          <MyBidAd admpid="438010" />
+          <MyBidAd admpid="434881" />
+          <MyBidAd admpid="434881" />
+          <MyBidAd admpid="434881" />
         </div>
       </div>
 
@@ -44,12 +44,6 @@ export default function Home() {
         title="Pronto para automatizar seu primeiro fluxo?" 
         buttonText="Começar grátis" 
       />
-
-      {/* 1 Anúncio MyBid no meio */}
-      <div className="max-w-7xl mx-auto px-6 py-4 w-full">
-        <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-2">Publicidade</p>
-        <MyBidAd admpid="438010" />
-      </div>
       
       <Benefits />
       <Gallery />
@@ -71,12 +65,6 @@ export default function Home() {
       <CTA />
       <FAQ />
       <Contact />
-
-      {/* 1 Anúncio MyBid no fim */}
-      <div className="max-w-7xl mx-auto px-6 py-4 w-full">
-        <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest mb-2">Publicidade</p>
-        <MyBidAd admpid="438010" />
-      </div>
 
       <Footer />
     </div>
