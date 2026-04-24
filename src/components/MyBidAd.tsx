@@ -5,7 +5,7 @@ interface MyBidAdProps {
   className?: string;
 }
 
-export default function MyBidAd({ admpid = '434881', className = '' }: MyBidAdProps) {
+export default function MyBidAd({ admpid = '438010', className = '' }: MyBidAdProps) {
   const adRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
